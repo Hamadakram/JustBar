@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="BarItem">
+        <attr name="icon" format="reference"/>
+        <attr name="selectedColor" format="color"/>
+        <attr name="unSelectedColor" format="color"/>
+        <attr name="selectedIconColor" format="color"/>
+        <attr name="unSelectedIconColor" format="color"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="selected" format="boolean"/>
+    </declare-styleable>
+</resources>
