@@ -75,7 +75,6 @@ public class JustBar extends LinearLayout implements View.OnClickListener {
         if (childs == 0) return;
 
         for (int i = 0; i <= childs * 2; i = i + 2) {
-            Log.e("Adding space to: ", i + "");
             addView(new EmptySpace(context), i);
         }
         invalidate();
@@ -101,20 +100,54 @@ public class JustBar extends LinearLayout implements View.OnClickListener {
         view.setSelected(true);
     }
 
+    /**
+     * On BarItem click listener
+     * @param onBarItemClickListener
+     */
+    public void setOnBarItemClickListener(OnBarItemClickListener onBarItemClickListener) {
+        this.onBarItemClickListener = onBarItemClickListener;
+    }
 
-    public View getSelected() {
+    /**
+     * Get item from the bar by its position
+     * @param position Position of the BarItem
+     * @return  BarItem
+     */
+    public BarItem getItemAt(int position) {
         for (int i = 0; i < getChildCount(); i++) {
             View child = getChildAt(i);
             if (child instanceof BarItem) {
-                if (child.isSelected()) {
-                    return child;
+                if (Integer.parseInt(String.valueOf(child.getTag())) == position) {
+                    return (BarItem) child;
                 }
             }
         }
         return null;
     }
 
-    public void setOnBarItemClickListener(OnBarItemClickListener onBarItemClickListener) {
-        this.onBarItemClickListener = onBarItemClickListener;
+    /**
+     * Get selected item from the bar
+     * @return BarItem - Selected item
+     */
+    public BarItem getSelected() {
+        for (int i = 0; i < getChildCount(); i++) {
+            View child = getChildAt(i);
+            if (child instanceof BarItem) {
+                if (child.isSelected()) {
+                    return (BarItem) child;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Set the item to be selected by its position
+     * @param position
+     */
+    public void setSelected(int position) {
+        BarItem shouldSelected = getItemAt(position);
+        if (shouldSelected == null) return;
+        shouldSelected.performClick();
     }
 }

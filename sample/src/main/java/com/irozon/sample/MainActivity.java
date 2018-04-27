@@ -23,6 +23,5 @@ public class MainActivity extends AppCompatActivity {
             public void onBarItemClick(BarItem barItem, int position) {
             }
         });
-
     }
 }

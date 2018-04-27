@@ -40,12 +40,6 @@
             app:icon="@drawable/ic_settings"
             app:radius="25dp" />
 
-        <com.irozon.justbar.BarItem
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:icon="@drawable/ic_chat"
-            app:radius="25dp" />
-
     </com.irozon.justbar.JustBar>
 
 </LinearLayout>
