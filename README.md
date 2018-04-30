@@ -68,6 +68,7 @@ Pull requests are welcome! Feel free to browse through open issues to look for t
 ## Acknowledgments
 
 * Built on [concept](https://www.uplabs.com/posts/function-bar-animation-asus-zenui-6-0-concept) by [Igor](https://www.uplabs.com/motionigor)
+* [Mockup](https://dribbble.com/shots/2638092-Free-HTC-One-A9-Mockup-PSD) by [Ramotion](https://dribbble.com/Ramotion)
 
 ## Licence
 ```
