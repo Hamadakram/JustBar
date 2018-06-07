@@ -1,6 +1,6 @@
 # JustBar
 
-![](https://github.com/Hamadakram/JustBar/blob/master/art/banner.gif?raw=true)
+![](https://github.com/Hamadakram/JustBar/blob/master/art/banner.gif)
 ## Download
 Grab via Gradle:
 ```java
