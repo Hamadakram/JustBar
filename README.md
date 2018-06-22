@@ -58,6 +58,10 @@ Attribute | Desription
                }
            });
 ```
+
+## Apps using JustBar
+If you are using JustBar in your app and would like to be listed here, please let me know by [email](mailto:hamadakram91@gmail.com) or opening a new issue!
+
 ## Authors
 
 * **Hammad Akram** - (https://github.com/hamadakram)
