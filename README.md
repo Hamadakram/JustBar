@@ -3,11 +3,11 @@
 ![](https://github.com/Hamadakram/JustBar/blob/master/art/banner.gif)
 ## Download
 Grab via Gradle:
-```java
+```groove
 implementation 'com.irozon.justbar:justbar:1.0.1'
 ```
 ## Usage
-```java
+```xml
     <com.irozon.justbar.JustBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -25,7 +25,7 @@ implementation 'com.irozon.justbar:justbar:1.0.1'
 ```
 #### BarItem - Child for ` JustBar `:
 Optional attributes for ` BarItem `
-```java
+```xml
     <com.irozon.justbar.BarItem
             android:id="@+id/barItem"
             android:layout_width="0dp"
